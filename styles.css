@@ -1,0 +1,212 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body and Font Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Navigation Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #57a7f3;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('https://via.placeholder.com/1600x800') no-repeat center center/cover;
+    color: #f34;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #57a7f3;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4b8ac1;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Work Section */
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.work-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.work-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.work-item p {
+    color: #777;
+}
+
+/* Contact Section */
+form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+form button {
+    background-color: #57a7f3;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4b8ac1;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Hide the default cursor */
+body {
+    cursor: none;
+}
+
+/* Style for custom cursor */
+#cursor {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 2px solid #333;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Cursor animation on click */
+#cursor.expand {
+    transform: scale(1.5);
+    opacity: 0.6;
+}
